@@ -149,11 +149,3 @@ class SinglyLinkedList {
 }
 
 const list = new SinglyLinkedList();
-
-list.push(1);
-list.push(20);
-list.push(999);
-
-list.reverse();
-
-list;
