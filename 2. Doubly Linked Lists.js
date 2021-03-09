@@ -67,11 +67,3 @@ class DoublyLinkedList {
 }
 
 const list = new DoublyLinkedList();
-
-list.push(5);
-list.push(11);
-list.push(59);
-
-list.pop();
-
-list;
