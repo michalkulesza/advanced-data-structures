@@ -80,6 +80,33 @@ class DoublyLinkedList {
 		this.length++;
 		return this;
 	}
+
+	get(index) {
+		if (index < 0 || index >= this.length) return null;
+
+		let count;
+		let currentNode;
+
+		if (index <= this.length / 2) {
+			count = 0;
+			currentNode = this.head;
+
+			while (count !== index) {
+				currentNode = currentNode.next;
+				count++;
+			}
+		} else {
+			count = this.length;
+			currentNode = this.tail;
+
+			while (count !== index) {
+				currentNode = currentNode.prev;
+				count--;
+			}
+		}
+
+		return currentNode;
+	}
 }
 
 const list = new DoublyLinkedList();
